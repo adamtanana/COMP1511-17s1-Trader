@@ -1,0 +1,11 @@
+int location_count(struct location *loc);
+void forceRefuel(struct bot *b, int *action, int *n);
+int nearestFuel(struct location *start);
+struct location **findBuyers(struct bot *b, struct commodity *commodity);
+struct location* findBestBuyer(struct bot *b, struct commodity* commodity, int* amount, struct location *loc);
+int calculateDistance(struct location *start, struct location *end);
+int botCount(struct location* loc);
+void dump(struct bot* b, int *action, int *n);
+int averageFuel(struct bot* b);
+int totalFuelInWorld(struct bot* b);
+struct location *findBestOption(struct bot *b, int *amt, int *refuel);
